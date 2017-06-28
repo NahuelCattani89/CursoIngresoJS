@@ -4,6 +4,7 @@
 */
 function Mostar()
 {
+	promp
 	
 }
 
