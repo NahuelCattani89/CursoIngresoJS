@@ -13,5 +13,79 @@ function CalcularPrecio ()
     var Marca
  	var Cantidad 
     var precioDescuento
-    
+    var precioDescuentoIIBB
+    Cantidad=document.getElementById("Cantidad").value;
+    Cantidad=parseInt(Cantidad);
+    precioDescuento=parseInt(precioDescuento);
+    precioDescuentoIIBB=parseInt(precioDescuentoIIBB);
+
+    if(Cantidad>=6)
+    {
+        precioDescuento=Cantidad*35*0.5;
+        alert(precioDescuento);
+    }
+    if(Cantidad=5 && Marca=="ArgentinaLuz")
+    {
+        precioDescuento=Cantidad*35*0.6;
+        alert(precioDescuento);
+    }    
+    else
+    {
+        if(Cantidad=5 && Marca!="ArgentinaLuz")
+        {   
+           precioDescuento=Cantidad*35*0.7;
+           alert(precioDescuento);     
+        }
+    else
+    {
+
+    }    
+    if(Cantidad=4 && Marca=="ArgentinaLuz || FelipeLuz")
+    {
+        precioDescuento=Cantidad*35*0.75;
+        alert(precioDescuento);
+    }
+    else
+    {
+        if(Cantidad=4 && Marca!="ArgentinaLuz || FelipeLuz")
+        {
+            precioDescuento=Cantidad*35*0.8;
+            alert(precioDescuento);
+        }
+     else
+     {
+
+     }
+    if(Cantidad=3 && Marca=="ArgentinaLuz")
+    {
+        precioDescuento=Cantidad*35*0.85;
+        alert(precioDescuento);
+    }
+    else
+    {
+        if(Cantidad=3 && Marca=="FelipeLuz")
+        {
+            precioDescuento=Cantidad*35*0.90;
+            alert(precioDescuento);
+        }
+    else
+    {
+        if(Cantidad=3 && Marca!="ArgentinaLuz && FelipeLuz")
+        {
+            precioDescuento=Cantidad*35*0.95;
+            alert(precioDescuento);
+        } 
+        else
+        {
+
+        }
+    }   
+    if(precioDescuento>120)
+    {
+        precioDescuentoIIBB=(precioDescuento*1.10);
+        alert("IIBB Usted pago " + precioDescuentoIIBB);
+    }
+    }   
+    }    
+    }
 }
