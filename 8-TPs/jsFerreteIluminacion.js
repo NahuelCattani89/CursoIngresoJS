@@ -10,31 +10,31 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var Marca
- 	var Cantidad 
-    var precioDescuento
-    var precioDescuentoIIBB
+    var Marca;
+ 	var Cantidad; 
+    var precioDescuento;
+    var precioDescuentoIIBB;
     Cantidad=document.getElementById("Cantidad").value;
     Cantidad=parseInt(Cantidad);
     precioDescuento=parseInt(precioDescuento);
     precioDescuentoIIBB=parseInt(precioDescuentoIIBB);
-
+    
     if(Cantidad>=6)
     {
-        precioDescuento=Cantidad*35*0.5;
-        alert(precioDescuento);
+        precioDescuento=((Cantidad*35)*0.5);
+        
     }
     if(Cantidad=5 && Marca=="ArgentinaLuz")
     {
-        precioDescuento=Cantidad*35*0.6;
-        alert(precioDescuento);
+        precioDescuento=((Cantidad*35)*0.6);
+        
     }    
     else
     {
         if(Cantidad=5 && Marca!="ArgentinaLuz")
         {   
-           precioDescuento=Cantidad*35*0.7;
-           alert(precioDescuento);     
+           precioDescuento=((Cantidad*35)*0.7);
+              
         }
     else
     {
@@ -42,15 +42,15 @@ function CalcularPrecio ()
     }    
     if(Cantidad=4 && Marca=="ArgentinaLuz || FelipeLuz")
     {
-        precioDescuento=Cantidad*35*0.75;
-        alert(precioDescuento);
+        precioDescuento=((Cantidad*35)*0.75);
+        
     }
     else
     {
         if(Cantidad=4 && Marca!="ArgentinaLuz || FelipeLuz")
         {
-            precioDescuento=Cantidad*35*0.8;
-            alert(precioDescuento);
+            precioDescuento=((Cantidad*35)*0.8);
+            
         }
      else
      {
@@ -58,22 +58,22 @@ function CalcularPrecio ()
      }
     if(Cantidad=3 && Marca=="ArgentinaLuz")
     {
-        precioDescuento=Cantidad*35*0.85;
-        alert(precioDescuento);
+        precioDescuento=((Cantidad*35)*0.85);
+        
     }
     else
     {
         if(Cantidad=3 && Marca=="FelipeLuz")
         {
-            precioDescuento=Cantidad*35*0.90;
-            alert(precioDescuento);
+            precioDescuento=((Cantidad*35)*0.90);
+            
         }
     else
     {
         if(Cantidad=3 && Marca!="ArgentinaLuz && FelipeLuz")
         {
-            precioDescuento=Cantidad*35*0.95;
-            alert(precioDescuento);
+            precioDescuento=((Cantidad*35)*0.95);
+            
         } 
         else
         {
@@ -86,6 +86,8 @@ function CalcularPrecio ()
         alert("IIBB Usted pago " + precioDescuentoIIBB);
     }
     }   
-    }    
+    } 
     }
+    document.getElementById("precioDescuento").value=precioDescuento;
 }
+

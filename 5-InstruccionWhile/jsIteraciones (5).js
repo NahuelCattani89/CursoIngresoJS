@@ -2,11 +2,9 @@ function Mostrar()
 {
 
 var sexo = prompt("ingrese f ó m .");
-while(sexo)
+while(sexo!="f" && sexo!="m")
 {
-    if(sexo=m);
-    alert("masculino");
-    break
+    sexo=prompt("ingrese f ó m.");
      
 }
 
