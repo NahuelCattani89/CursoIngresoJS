@@ -6,9 +6,9 @@ function Mostrar()
 	var numero
 	var acumuladorNegativos=0;
 	var acumuladorPositivos=0;
-	var contadorPositivos;
-	var contadorNegativos;
-	var contadorCeros;
+	var contadorPositivos=0;
+	var contadorNegativos=0;
+	var contadorCeros=0;
 	var contadorPares;
 	var promedioPositivos;
 	var promedioNegativos;
@@ -19,12 +19,7 @@ function Mostrar()
 	{
 		numero=prompt("ingrese un valor....");
 		numero=parseInt(numero);
-		
-	while(isNaN(numero))
-	{
-		numero=prompt("Ingrese un numero...");
-		numero=parseInt(numero);	
-	}
+		isNaN(numero)
 	if(numero<0)
 	{
 		acumuladorNegativos+=numero;
@@ -49,8 +44,21 @@ function Mostrar()
 	
 	promedioPositivos=acumuladorPositivos/contadorPositivos;
 	promedioNegativos=acumuladorNegativos/contadorNegativos;
-	diferenciaPosNeg=contadorPositivos-contadorNegativos;
+	if(isNaN(promedioPositivos))
+	{
+		promedioPositivos=("Escriba un numero nuevo");
+	}
+	if(isNaN(promedioNegativos))
+	{
+		promedioNegativos=("Escriba un numero nuevo");
+	}
 
+	diferenciaPosNeg=contadorPositivos-contadorNegativos;
+	if(diferenciaPosNeg<0)
+	{
+		diferenciaPosNeg*=(-1);
+	}
+	
 	document.write(promedioPositivos);
 	document.write(promedioNegativos);
 	document.write(diferenciaPosNeg);

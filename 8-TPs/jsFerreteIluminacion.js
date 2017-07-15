@@ -29,65 +29,49 @@ function CalcularPrecio ()
         precioDescuento=((Cantidad*35)*0.6);
         
     }    
-    else
-    {
-        if(Cantidad=5 && Marca!="ArgentinaLuz")
+    else if(Cantidad=5)
         {   
            precioDescuento=((Cantidad*35)*0.7);
               
         }
-    else
-    {
-
-    }    
-    if(Cantidad=4 && Marca=="ArgentinaLuz || FelipeLuz")
+    else if(Cantidad=4 && Marca=="ArgentinaLuz || FelipeLuz")
     {
         precioDescuento=((Cantidad*35)*0.75);
         
     }
-    else
-    {
-        if(Cantidad=4 && Marca!="ArgentinaLuz || FelipeLuz")
+    else if(Cantidad=4)
         {
             precioDescuento=((Cantidad*35)*0.8);
             
         }
-     else
-     {
-
-     }
-    if(Cantidad=3 && Marca=="ArgentinaLuz")
+     else if(Cantidad=3 && Marca=="ArgentinaLuz")
     {
         precioDescuento=((Cantidad*35)*0.85);
         
     }
-    else
-    {
-        if(Cantidad=3 && Marca=="FelipeLuz")
+    else if(Cantidad=3 && Marca=="FelipeLuz")
         {
             precioDescuento=((Cantidad*35)*0.90);
             
         }
-    else
-    {
-        if(Cantidad=3 && Marca!="ArgentinaLuz && FelipeLuz")
+    else if(Cantidad=3)
         {
             precioDescuento=((Cantidad*35)*0.95);
             
         } 
-        else
+   else
         {
 
         }
-    }   
+       
     if(precioDescuento>120)
     {
         precioDescuentoIIBB=(precioDescuento*1.10);
         alert("IIBB Usted pago " + precioDescuentoIIBB);
     }
-    }   
-    } 
-    }
+    
+     
+    
     document.getElementById("precioDescuento").value=precioDescuento;
 }
 
