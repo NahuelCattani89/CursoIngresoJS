@@ -8,7 +8,7 @@ function MostrarAumento()
     var resultado;
     num1=document.getElementById("sueldo").value;
     num1=parseInt(num1);
-    resultado=(1.1*num1);
+    resultado=(1.10*num1);
     document.getElementById("resultado").value=resultado;
 
 	

@@ -9,5 +9,21 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
+    var num=prompt("ingrese un numero");
+
+function NumerosPares    
+
+if(num>0)
+{
+
+} 	
+else
+{
+    alert("El numero ingresado no es valido");
+}
+
+
+
+
+
 }
